@@ -1,18 +1,36 @@
 .quiz-play-holder {
-    width: 80%;
-    margin-left: 10%;
-    text-align: center;
-    margin-top: 40px;
+  width: 80%;
+  margin-left: 10%;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.quiz-play-holder input {
+  border-radius: 6px;
+  border: 1px solid #2f679e;
+  padding: 18px;
+  font-size: 17px;
+  margin-top: 15px;
+  width: auto;
 }
 
 .category-holder {
-    margin-top: 16px;
-    font-size: 24px;
+  margin-top: 16px;
+  font-size: 24px;
+}
+
+.category-holder .play-category {
+  cursor: pointer;
+  margin-bottom: 12px;
+}
+
+.category-holder .play-category:hover {
+  color: #2f679e;
 }
 
 .choose-header {
-    font-size: 34px;
-    font-weight: bold;
+  font-size: 34px;
+  font-weight: bold;
 }
 
 .play-category:hover {
@@ -20,28 +38,46 @@
 }
 
 .button {
-    width: 100px;
-    margin-top: 5px;
-    background-color: dodgerblue;
-    color: white;
-    padding: 3px 5px;
-    align-self: center;
+  width: 100px;
+  margin-top: 5px;
+  background-color: #2f679e;
+  border-radius: 5px;
+  color: white;
+  padding: 8px 12px;
+  align-self: center;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #263544;
+  color: #5b98d4;
 }
 
 div.button {
-    margin-top: 20px;
-    margin-left: calc(50% - 50px);
+  margin-top: 0px;
+  margin-left: calc(50% - 130px);
+}
+
+div.next-question,
+div.play-again {
+  width: fit-content;
+  margin-top: 20px;
+  margin-left: calc(50% - 60px);
 }
 
 .quiz-question {
-    margin: 12px;
-    font-size: 24px;
+  margin: 12px;
+  font-size: 24px;
 }
 
 .correct {
-    color: green;
+  color: green;
 }
 
 .wrong {
-    color: red;
+  color: red;
+}
+
+.final-header {
+  font-size: 30px;
 }

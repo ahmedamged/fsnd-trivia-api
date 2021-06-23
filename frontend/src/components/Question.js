@@ -22,14 +22,14 @@ class Question extends Component {
           <img className="category" src={`${category.toLowerCase()}.svg`}/>
           <div className="difficulty">Difficulty: {difficulty}</div>
           <img src="delete.png" className="delete" onClick={() => this.props.questionAction('DELETE')}/>
-          
+
         </div>
         <div className="show-answer button"
             onClick={() => this.flipVisibility()}>
             {this.state.visibleAnswer ? 'Hide' : 'Show'} Answer
           </div>
         <div className="answer-holder">
-          <span style={{"visibility": this.state.visibleAnswer ? 'visible' : 'hidden'}}>Answer: {answer}</span>
+          <span style={{"display": this.state.visibleAnswer ? 'inline' : 'none'}}>{answer}</span>
         </div>
       </div>
     );

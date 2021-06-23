@@ -12,16 +12,67 @@
   width: 60%;
 }
 
+.categories-list li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.categories-list li:hover,
+.categories-list h2:hover {
+  color: #2f679e;
+}
+
+.categories-list .category {
+  padding-left: 12px;
+}
+
+.categories-list h2 {
+  cursor: pointer;
+}
+
+.categories-list .search-button {
+  width: 100px;
+  margin-top: 15px;
+  background-color: #2f679e;
+  border-radius: 5px;
+  color: white;
+  padding: 8px 12px;
+  align-self: center;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.categories-list .search-button:hover {
+  background-color: #263544;
+  color: #5b98d4;
+}
+
+.categories-list .search-input {
+  padding: 8px;
+  border-radius: 7px;
+  border: 1px solid #2f679e;
+}
+
 .questions-list {
   flex-basis: 75%;
   text-align: center;
+  margin-right: 40px;
 }
 
 .Question-holder {
   padding: 10px 20px;
-  border: 2px black solid;
+  border: 2px dotted #2f679e;
   text-align: left;
   margin: 7px;
+  border-radius: 7px;
+}
+
+.Question-holder:hover {
+  border: 2px solid #2f679e;
 }
 
 .Question-status {
@@ -31,39 +82,52 @@
   width: 200px;
   align-items: center;
   justify-content: space-between;
+  margin-top: 20px;
 }
 
 .Question {
   font-size: 21px;
   width: 100%;
+  margin-top: 20px;
 }
 
 .answer-holder {
   font-size: 25px;
   height: 25px;
   margin: 5px 0px;
+  width: fit-content;
+  display: inline;
+  margin-left: 25px;
 }
 
 .show-answer {
-  width: 100px;
-  margin-top: 5px;
-  background-color: dodgerblue;
-  color: white;
-  padding: 3px 5px;
-  margin-left: 0px !important;
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 14px;
+}
+
+.pagination-menu {
+  margin: 30px 20px;
 }
 
 span.page-num {
-  margin: 5px;
-  padding-bottom: 50px;
-  /* color: blue; */
+  margin: 20px;
+  padding: 6px 9px;
+  border: 1px dotted #2f679e;
+  border-radius: 7px;
+  color: #2f679e;
   font-weight: bolder;
-  text-decoration: underline;
-  font-size: 16px;
+  text-decoration: none;
+  font-size: 22px;
+  cursor: pointer;
 }
 
 span.page-num.active {
-  color: blue;
+  color: #001736;
+}
+
+span.page-num:hover {
+  border: 1px solid #2f679e;
 }
 
 img.category {
@@ -72,4 +136,6 @@ img.category {
 
 img.delete {
   width: 20px;
+  cursor: pointer;
+  padding: 2px;
 }

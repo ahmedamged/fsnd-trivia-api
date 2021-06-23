@@ -5,3 +5,25 @@
 #add-form {
   text-align: center;
 }
+
+#add-question-form label {
+    color: #2f679e;
+}
+
+#add-question-form input,
+#add-question-form select {
+  margin-left: 24px;
+  border-radius: 6px;
+  padding: 8px;
+  border: 1px solid #2f679e;
+  font-size: 16px;
+}
+
+#add-question-form {
+  width: fit-content;
+  align-items: baseline;
+}
+
+#add-question-form select {
+  min-width: 210px;
+}
